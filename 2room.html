@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room Page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+
+	<center>
+		<h1  class="header">	
+			FIND YOUR PET
+			
+		</h1>
+		<h3 id="h3user_name" class="color_white"></h3>
+
+		<div class="form-group input_div_room_page">
+			<label>#PetName:</label>
+			<input type="text" id="petname" class="form-control" placeholder="enter your pet name">
+			<br>
+			<br>
+			<label>#PetType:</label>
+			<input type="text" id="pettype" class="form-control" placeholder="enter your pet type">
+			<br>
+			<br>
+			<label>#Breed:</label>
+			<input type="text" id="breed" class="form-control" placeholder="(leave blank if you dont know)">
+			<br>
+			<br>
+			<label>#Age:</label>
+			<input type="text" id="age" class="form-control" placeholder="enter your pet age">
+			<br>
+			<br>
+			<label>#Last seen</label>
+			<input type="text" id="lastseen" class="form-control" placeholder="when u saw ur pet">
+			<br>
+			<br>
+			<label>#If found call or Email:</label>
+			<input type="text" id="contact" class="form-control" placeholder="enter your contact details">
+			<br>
+			<br>
+		</div>
+		
+		<button onclick="Postad();" class="btn btn-success">#Add Post</button>
+
+		<h3 class="color_white">#Previous Finds</h3>
+
+		<div id="output"></div>
+		
+	</center>
+</div>
+
+
+<script src="2room.js"></script>
+</body>
+</html>
